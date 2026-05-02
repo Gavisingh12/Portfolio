@@ -128,8 +128,8 @@ const commands = [
   { title: "Go to Projects", hint: "Navigation", action: () => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" }) },
   { title: "Go to Profile Links", hint: "Navigation", action: () => document.querySelector("#kit")?.scrollIntoView({ behavior: "smooth" }) },
   { title: "Open GitHub", hint: "Profile", action: () => window.open("https://github.com/Gavisingh12", "_blank") },
-  { title: "Open LinkedIn", hint: "Profile", action: () => window.open("https://www.linkedin.com/in/gavindra-singh/", "_blank") },
-  { title: "Email Gavindra", hint: "Contact", action: () => (window.location.href = "mailto:gavinder.singh@gmail.com") },
+  { title: "Open LinkedIn", hint: "Profile", action: () => window.open("https://www.linkedin.com/in/gavinder-singh/", "_blank") },
+  { title: "Email Gavinder", hint: "Contact", action: () => (window.location.href = "mailto:gavinder.singh@gmail.com") },
   { title: "Decision Intelligence Case Study", hint: "Project", action: () => openCaseStudy("decision") },
   { title: "CareCompass AI Case Study", hint: "Project", action: () => openCaseStudy("carecompass") },
   { title: "Apple Headphones Project", hint: "Project", action: () => openCaseStudy("airpods") },
@@ -406,7 +406,7 @@ document.addEventListener("keydown", (event) => {
 
   const key = event.key.toLowerCase();
   if (key === "g") window.open("https://github.com/Gavisingh12", "_blank");
-  if (key === "l") window.open("https://www.linkedin.com/in/gavindra-singh/", "_blank");
+  if (key === "l") window.open("https://www.linkedin.com/in/gavinder-singh/", "_blank");
   if (key === "c") document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
 });
 
