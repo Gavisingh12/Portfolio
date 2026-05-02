@@ -348,6 +348,7 @@ main {
 
 .floating-console {
   position: absolute;
+  z-index: 6;
   right: 18px;
   bottom: 18px;
   width: min(430px, calc(100% - 36px));
@@ -3011,5 +3012,209 @@ main {
   .section-heading h2,
   .contact h2 {
     font-size: clamp(2.4rem, 12vw, 3.6rem);
+  }
+}
+
+/* Recruiter scan density: compact project and CV sections */
+#projects.section {
+  padding-top: 52px;
+}
+
+#projects .section-heading {
+  margin-bottom: 18px;
+}
+
+.project-grid {
+  gap: 18px;
+  align-items: start;
+}
+
+.project-card,
+.project-card.featured {
+  grid-template-rows: 210px auto;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.project-card.featured {
+  grid-column: span 2;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-rows: auto;
+}
+
+.project-visual,
+.project-card.featured .project-visual {
+  min-height: 210px;
+  border-radius: 22px 22px 0 0;
+}
+
+.project-card.featured .project-visual {
+  border-radius: 22px 0 0 22px;
+}
+
+.browser-frame {
+  inset: 18px;
+  border-radius: 16px;
+}
+
+.browser-frame img {
+  object-position: top center;
+}
+
+.project-visual span {
+  left: 0;
+  bottom: 0;
+  max-width: 320px;
+  font-size: clamp(1.75rem, 2.8vw, 3rem);
+}
+
+.project-content {
+  gap: 12px;
+  padding: 22px;
+}
+
+.project-content h3 {
+  font-size: clamp(1.25rem, 1.45vw, 1.65rem);
+  line-height: 1.12;
+}
+
+.project-content p {
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.project-content ul {
+  display: none;
+}
+
+.tags {
+  gap: 7px;
+  margin: 0;
+}
+
+.tags span {
+  padding: 6px 9px;
+  font-size: 0.74rem;
+}
+
+.project-actions {
+  gap: 10px;
+}
+
+.project-actions .text-button {
+  min-height: 36px;
+  padding-inline: 12px;
+}
+
+.cv-section {
+  padding-top: 44px;
+}
+
+.cv-shell {
+  border-radius: 22px;
+}
+
+.cv-layout {
+  grid-template-columns: minmax(280px, 0.58fr) minmax(420px, 1fr);
+  min-height: 0;
+}
+
+.cv-summary-card {
+  gap: 12px;
+  padding: 24px 28px;
+}
+
+.cv-summary-card h3 {
+  font-size: clamp(1.9rem, 2.8vw, 3rem);
+  line-height: 1;
+}
+
+.cv-summary-card p {
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.cv-document-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 18px;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.cv-live-preview {
+  max-height: 430px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.cv-preview-section {
+  padding: 12px 0;
+}
+
+.cv-proof-stack {
+  min-height: 0;
+}
+
+@media (max-width: 980px) {
+  .project-card.featured,
+  .project-card {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto;
+  }
+
+  .project-card.featured .project-visual {
+    border-radius: 22px 22px 0 0;
+  }
+
+  .cv-layout,
+  .cv-document-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-document-preview {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #projects.section,
+  .cv-section {
+    padding-top: 36px;
+  }
+
+  .project-card,
+  .project-card.featured {
+    grid-template-rows: 180px auto;
+    border-radius: 18px;
+  }
+
+  .project-visual,
+  .project-card.featured .project-visual {
+    min-height: 180px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .browser-frame {
+    inset: 14px;
+    border-radius: 14px;
+  }
+
+  .project-visual span {
+    max-width: 230px;
+    font-size: clamp(1.55rem, 8vw, 2.2rem);
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .project-content h3 {
+    font-size: 1.18rem;
+  }
+
+  .cv-summary-card {
+    padding: 20px;
   }
 }

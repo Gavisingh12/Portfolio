@@ -53,7 +53,7 @@ const caseStudies: Record<string, CaseStudy> = {
   decision: {
     title: "AI Decision Intelligence Platform",
     type: "AI/ML Project",
-    summary: "Shows my interest in using AI and data science to make decision-making clearer.",
+    summary: "I use AI and data science ideas to make decision-making clearer and easier to understand.",
     problem: "I wanted to build beyond tutorials and connect data, logic, and user-facing output.",
     solution: "I created a decision platform that presents analytical thinking, ML direction, and usable UI.",
     stack: ["AI", "ML workflow", "Data upload", "Hugging Face", "Decision support"],
@@ -71,7 +71,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "AI Powered Medical Consultation System",
     type: "Applied AI Project",
     summary: "A healthcare AI project that reflects my ability to build useful systems around real user problems.",
-    problem: "I wanted to show that I can apply AI to a meaningful domain and think about the complete user journey.",
+    problem: "I wanted to apply AI to a meaningful domain and think about the complete user journey.",
     solution: "I built a project that combines AI assistance, user flow, records, reports, and a polished experience.",
     stack: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Gemini API", "Render"],
     architecture: ["Patient input", "Flask routes", "Gemini analysis", "PostgreSQL history", "PDF report"],
@@ -85,11 +85,11 @@ const caseStudies: Record<string, CaseStudy> = {
     link: "https://carecompass-ai.onrender.com/",
   },
   airpods: {
-    title: "Apple Headphones Interactive Showcase",
+    title: "Apple Headphones Interactive UI",
     type: "Premium Frontend Project",
-    summary: "A frontend project that shows my design taste, animation sense, and attention to visual polish.",
-    problem: "I wanted to prove that I can create interfaces that feel modern, smooth, and presentation-ready.",
-    solution: "I built a product-style showcase inspired by premium launch pages, with motion and layout focused on impact.",
+    summary: "A frontend project where I practiced design taste, animation timing, and visual polish.",
+    problem: "I wanted to create an interface that feels modern, smooth, and visually polished.",
+    solution: "I built a product-style interface inspired by premium launch pages, with motion and layout focused on impact.",
     stack: ["Next.js", "React", "TypeScript", "GSAP", "Framer Motion", "Three.js"],
     architecture: ["Product story", "Scroll trigger", "Motion timeline", "3D visual layer", "GitHub Pages"],
     gallery: [
@@ -104,9 +104,9 @@ const caseStudies: Record<string, CaseStudy> = {
   os: {
     title: "Resilient File Harbor",
     type: "Computer Science Project",
-    summary: "A systems project that shows my computer science foundation and ability to explain technical ideas visually.",
+    summary: "A systems project where I practiced computer science fundamentals and visual explanation.",
     problem: "I wanted to present an academic concept in a way that is easier to understand and more impressive than plain notes.",
-    solution: "I built a visual demo that makes the concept easier to scan, explain, and discuss in interviews.",
+    solution: "I built a visual demo that makes the concept easier to understand, explain, and discuss.",
     stack: ["Operating Systems", "Web UI", "GitHub Pages", "Systems design"],
     architecture: ["Storage concept", "Replication logic", "Node status", "Web interface", "GitHub Pages"],
     gallery: [
@@ -126,13 +126,13 @@ const commands = [
   { title: "Download CV", hint: "Resume", action: () => (window.location.href = "assets/gavinder-general-cv.pdf") },
   { title: "Download Specialized CV", hint: "Resume", action: () => (window.location.href = "assets/gavinder-specialized-cv.pdf") },
   { title: "Go to Projects", hint: "Navigation", action: () => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" }) },
-  { title: "Go to Recruiter Kit", hint: "Navigation", action: () => document.querySelector("#kit")?.scrollIntoView({ behavior: "smooth" }) },
+  { title: "Go to Profile Links", hint: "Navigation", action: () => document.querySelector("#kit")?.scrollIntoView({ behavior: "smooth" }) },
   { title: "Open GitHub", hint: "Profile", action: () => window.open("https://github.com/Gavisingh12", "_blank") },
   { title: "Open LinkedIn", hint: "Profile", action: () => window.open("https://www.linkedin.com/in/gavindra-singh/", "_blank") },
   { title: "Email Gavindra", hint: "Contact", action: () => (window.location.href = "mailto:gavinder.singh@gmail.com") },
   { title: "Decision Intelligence Case Study", hint: "Project", action: () => openCaseStudy("decision") },
   { title: "CareCompass AI Case Study", hint: "Project", action: () => openCaseStudy("carecompass") },
-  { title: "Apple Headphones Case Study", hint: "Project", action: () => openCaseStudy("airpods") },
+  { title: "Apple Headphones Project", hint: "Project", action: () => openCaseStudy("airpods") },
   { title: "OS Project Case Study", hint: "Project", action: () => openCaseStudy("os") },
 ];
 
