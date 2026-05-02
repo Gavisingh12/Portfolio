@@ -52,10 +52,10 @@ type CaseStudy = {
 const caseStudies: Record<string, CaseStudy> = {
   decision: {
     title: "AI Decision Intelligence Platform",
-    type: "AI/ML Data Product Case Study",
-    summary: "A guided data science workspace for turning uploaded business files into model training, results, estimates, and AI-assisted next steps.",
-    problem: "Most beginner ML tools stop at upload or prediction. Users still need a readable workflow that explains what happened and what to do next.",
-    solution: "Designed a step-based interface with upload, training, result, and assistant stages so the product feels guided instead of technical-only.",
+    type: "AI/ML Project Proof",
+    summary: "A project that shows my interest in using AI and data science to make decision-making clearer.",
+    problem: "I wanted to prove that I can work beyond tutorials and build something that connects data, logic, and user-facing output.",
+    solution: "I built a live AI decision platform that presents my analytical thinking, ML direction, and ability to turn an idea into a usable demo.",
     stack: ["AI", "ML workflow", "Data upload", "Hugging Face", "Decision support"],
     architecture: ["User upload", "Data cleaning", "Model workflow", "Results dashboard", "AI assistant"],
     gallery: [
@@ -69,10 +69,10 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   carecompass: {
     title: "AI Powered Medical Consultation System",
-    type: "Healthcare AI Case Study",
-    summary: "A full-stack healthcare assistant for symptom analysis, consultation history, appointments, hospital lookup, and PDF reports.",
-    problem: "Healthcare tools need trust, history, and follow-up context, not just a one-time chatbot answer.",
-    solution: "Built a structured healthcare workflow with authentication, database-backed history, AI fallback handling, reports, and deployment checks.",
+    type: "Applied AI Project Proof",
+    summary: "A healthcare AI project that reflects my ability to build useful systems around real user problems.",
+    problem: "I wanted to show that I can apply AI to a meaningful domain and think about the complete user journey.",
+    solution: "I built a live project that combines AI assistance, user flow, records, reports, and a polished experience.",
     stack: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Gemini API", "Render"],
     architecture: ["Patient input", "Flask routes", "Gemini analysis", "PostgreSQL history", "PDF report"],
     gallery: [
@@ -86,10 +86,10 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   airpods: {
     title: "Apple Headphones Interactive Showcase",
-    type: "Frontend Experience Case Study",
-    summary: "A cinematic product showcase with scroll storytelling, responsive layouts, and polished animation direction.",
-    problem: "Product pages often look static and fail to communicate premium feel through interaction.",
-    solution: "Used motion, scroll timing, and clean product presentation to create a richer frontend experience.",
+    type: "Premium Frontend Project Proof",
+    summary: "A frontend project that shows my design taste, animation sense, and attention to visual polish.",
+    problem: "I wanted to prove that I can create interfaces that feel modern, smooth, and presentation-ready.",
+    solution: "I built a product-style showcase inspired by premium launch pages, with motion and layout focused on impact.",
     stack: ["Next.js", "React", "TypeScript", "GSAP", "Framer Motion", "Three.js"],
     architecture: ["Product story", "Scroll trigger", "Motion timeline", "3D visual layer", "GitHub Pages"],
     gallery: [
@@ -103,10 +103,10 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   os: {
     title: "Resilient File Harbor",
-    type: "Systems UI Case Study",
-    summary: "An operating-system themed project presented as a web experience around distributed storage and reliability concepts.",
-    problem: "Systems concepts can be difficult to present visually when they stay only in documentation or code.",
-    solution: "Built a clear web interface that turns OS ideas into a browsable, demo-friendly experience.",
+    type: "Computer Science Project Proof",
+    summary: "A systems project that shows my computer science foundation and ability to explain technical ideas visually.",
+    problem: "I wanted to present an academic concept in a way that is easier to understand and more impressive than plain notes.",
+    solution: "I built a visual demo that makes the concept easier to scan, explain, and discuss in interviews.",
     stack: ["Operating Systems", "Web UI", "GitHub Pages", "Systems design"],
     architecture: ["Storage concept", "Replication logic", "Node status", "Web interface", "GitHub Pages"],
     gallery: [
