@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gavindra Singh portfolio: AI/ML, full-stack development, interactive CV, projects, and recruiter-ready profile."
+    />
+    <title>Gavindra Singh | AI & Full-Stack Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-SvdqPHrG.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D8rmwrzl.css">
+  </head>
+  <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <canvas class="three-field" id="threeField" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Gavindra Singh home">
+        <span class="brand-mark">GS</span>
+        <span>Gavindra Singh</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-button" id="compareToggle" type="button" aria-pressed="false">
+          <span class="icon">C</span>
+          <span class="button-text">Compare</span>
+        </button>
+        <button class="icon-button" id="recruiterToggle" type="button" aria-pressed="false">
+          <span class="icon">R</span>
+          <span class="button-text">Recruiter</span>
+        </button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="sun">L</span>
+          <span class="moon">D</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">AI/ML Developer | Data Scientist | Full-Stack Builder | CSE Student</p>
+          <h1>AI/ML developer building intelligent experiences.</h1>
+          <p class="hero-subtitle">
+            I am Gavindra Singh, a CSE student and data scientist focused on AI,
+            clean interfaces, and practical problem solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="#cv">Explore CV</a>
+            <a class="secondary-button" href="#projects">View Projects</a>
+            <a class="ghost-button" href="assets/gavinder-general-cv.pdf" download>Download CV</a>
+          </div>
+          <div class="shortcut-row premium-stats" aria-label="Portfolio highlights">
+            <span>4 featured projects</span>
+            <span>2 CV versions</span>
+            <span>AI/ML + Data Science</span>
+            <span>Full-stack builder</span>
+          </div>
+        </div>
+
+        <aside class="hero-showcase" aria-label="Premium profile showcase">
+          <picture class="hero-art">
+            <source srcset="./assets/premium-hero-bg-DaFzUqgj.webp" type="image/webp" />
+            <img src="./assets/premium-hero-bg-CNUHQpCK.png" alt="Abstract premium AI portfolio visual" />
+          </picture>
+          <div class="floating-console signal-panel">
+            <div class="panel-header">
+              <span>Gavindra Singh</span>
+              <span class="live-dot">Available</span>
+            </div>
+            <div class="metric-grid">
+              <div>
+                <strong>4</strong>
+                <span>Featured projects</span>
+              </div>
+              <div>
+                <strong>100+</strong>
+                <span>LeetCode problems</span>
+              </div>
+              <div>
+                <strong>7.21</strong>
+                <span>Current CGPA</span>
+              </div>
+              <div>
+                <strong>2026</strong>
+                <span>Patent filed</span>
+              </div>
+            </div>
+
+            <div class="identity-strip">
+              <a href="https://github.com/Gavisingh12" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/gavindra-singh/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="mailto:gavinder.singh@gmail.com">Email</a>
+            </div>
+
+            <div class="availability-card">
+              <span>Open to internships and entry-level roles</span>
+              <strong>AI/ML, data science, full-stack development, frontend engineering</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="apple-story reveal" aria-label="Portfolio positioning">
+        <div>
+          <span class="label">Who I am</span>
+          <strong>AI/ML developer and data scientist</strong>
+          <p>I learn fast, build seriously, and turn ideas into working projects recruiters can open and verify.</p>
+        </div>
+        <div>
+          <span class="label">What I bring</span>
+          <strong>Practical execution with polished UI</strong>
+          <p>I combine Python, ML thinking, full-stack development, and clean visual presentation.</p>
+        </div>
+        <div>
+          <span class="label">Why it matters</span>
+          <strong>Proof beyond words</strong>
+          <p>My portfolio shows live projects, certificates, problem solving, and consistent self-driven growth.</p>
+        </div>
+      </section>
+
+      <section class="proof-strip reveal" aria-label="Proof of work">
+        <div>
+          <strong>Patent Filed</strong>
+          <span>AI-coordinated system concept</span>
+        </div>
+        <div>
+          <strong>Live Deployments</strong>
+          <span>GitHub Pages, Render, Hugging Face</span>
+        </div>
+        <div>
+          <strong>Certifications</strong>
+          <span>Google Cloud, NPTEL, IBM, Infosys</span>
+        </div>
+        <div>
+          <strong>100+ Problems</strong>
+          <span>Algorithm practice on LeetCode</span>
+        </div>
+      </section>
+
+      <section class="section intelligence-grid reveal" id="proof">
+        <div class="github-panel">
+          <p class="eyebrow">GitHub</p>
+          <h2>Code, projects, and learning trail.</h2>
+          <div class="github-stats">
+            <div>
+              <strong>4</strong>
+              <span>featured projects</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>core technologies</span>
+            </div>
+            <div>
+              <strong>CI/CD</strong>
+              <span>engineering practice</span>
+            </div>
+          </div>
+          <a class="secondary-button" href="https://github.com/Gavisingh12" target="_blank" rel="noreferrer">Open GitHub profile</a>
+        </div>
+
+        <div class="status-monitor" aria-label="Deployment status monitor">
+          <div class="panel-header">
+            <span>Live Status Monitor</span>
+            <span class="live-dot">4 online</span>
+          </div>
+          <div class="status-list">
+            <a href="https://gavinder-ai-decision-intelligence-platform.hf.space" target="_blank" rel="noreferrer">
+              <span class="status-light"></span>
+              <strong>Decision Intelligence</strong>
+              <em>Hugging Face</em>
+            </a>
+            <a href="https://carecompass-ai.onrender.com/" target="_blank" rel="noreferrer">
+              <span class="status-light"></span>
+              <strong>CareCompass AI</strong>
+              <em>Render</em>
+            </a>
+            <a href="https://gavisingh12.github.io/apple-headphones/" target="_blank" rel="noreferrer">
+              <span class="status-light"></span>
+              <strong>Apple Headphones</strong>
+              <em>GitHub Pages</em>
+            </a>
+            <a href="https://gavisingh12.github.io/os-project/" target="_blank" rel="noreferrer">
+              <span class="status-light"></span>
+              <strong>Resilient File Harbor</strong>
+              <em>GitHub Pages</em>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="recruiter-view reveal" id="recruiterPanel" aria-live="polite">
+        <div class="section-heading compact">
+          <p class="eyebrow">Recruiter Mode</p>
+          <h2>Fast hiring snapshot</h2>
+        </div>
+        <div class="recruiter-grid">
+          <div>
+            <span class="label">Best fit</span>
+            <strong>AI/ML, data science, full-stack internships, frontend engineering</strong>
+          </div>
+          <div>
+            <span class="label">Strongest proof</span>
+            <strong>Healthcare AI, decision intelligence platform, animated product showcase</strong>
+          </div>
+          <div>
+            <span class="label">Core stack</span>
+            <strong>Python, React, Next.js, Flask, SQLAlchemy, PostgreSQL, Gemini API</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>How I think and build.</h2>
+        </div>
+
+        <div class="project-filters" aria-label="Project filters">
+          <button class="filter-chip active" type="button" data-filter="all">All</button>
+          <button class="filter-chip" type="button" data-filter="ai">AI</button>
+          <button class="filter-chip" type="button" data-filter="fullstack">Full Stack</button>
+          <button class="filter-chip" type="button" data-filter="frontend">Frontend</button>
+          <button class="filter-chip" type="button" data-filter="systems">Systems</button>
+        </div>
+
+        <div class="compare-panel" id="comparePanel" aria-label="Project comparison">
+          <div class="compare-row compare-head">
+            <span>Project</span><span>Domain</span><span>Stack</span><span>Deployment</span><span>Strongest signal</span>
+          </div>
+          <div class="compare-row">
+            <strong>Decision Intelligence</strong><span>AI / Data</span><span>ML workflow</span><span>Hugging Face</span><span>Decision support UX</span>
+          </div>
+          <div class="compare-row">
+            <strong>CareCompass AI</strong><span>Healthcare</span><span>Flask + PostgreSQL</span><span>Render</span><span>Full-stack AI app</span>
+          </div>
+          <div class="compare-row">
+            <strong>Apple Headphones</strong><span>Frontend</span><span>Next.js + GSAP</span><span>GitHub Pages</span><span>Premium interaction</span>
+          </div>
+          <div class="compare-row">
+            <strong>Resilient File Harbor</strong><span>Systems</span><span>Web UI</span><span>GitHub Pages</span><span>OS concept clarity</span>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-category="ai fullstack" data-project="decision">
+            <div class="project-visual visual-ai">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <picture>
+                  <source srcset="./assets/decision-Bjhtnmgw.webp" type="image/webp" />
+                  <img src="./assets/decision-CJyUSAkG.png" alt="AI Decision Intelligence Platform screenshot" loading="lazy" />
+                </picture>
+              </div>
+              <span>Decision Assistant</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>AI Decision Intelligence Platform</h3>
+                <span class="status">Live</span>
+              </div>
+              <p>
+                Built to show my data science thinking, AI direction, and ability
+                to turn complex ideas into a usable interface.
+              </p>
+              <div class="tags">
+                <span>AI</span><span>Data</span><span>ML workflow</span><span>Hugging Face</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gavinder-ai-decision-intelligence-platform.hf.space" target="_blank" rel="noreferrer">Open project</a>
+                <button class="text-button case-study-trigger" type="button" data-project="decision">Case study</button>
+                <button class="text-button lightbox-trigger" type="button" data-image="assets/projects/decision.png">Preview</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ai fullstack" data-project="carecompass">
+            <div class="project-visual visual-health">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <picture>
+                  <source srcset="./assets/carecompass-B8BOxpOl.webp" type="image/webp" />
+                  <img src="./assets/carecompass-COA_dddL.png" alt="CareCompass AI screenshot" loading="lazy" />
+                </picture>
+              </div>
+              <span>CareCompass AI</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>AI Powered Medical Consultation System</h3>
+                <span class="status">Live</span>
+              </div>
+              <p>
+                Built around a real healthcare use case, showing applied AI,
+                structured thinking, and user-focused execution.
+              </p>
+              <div class="tags">
+                <span>Flask</span><span>PostgreSQL</span><span>Gemini API</span><span>Render</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://carecompass-ai.onrender.com/" target="_blank" rel="noreferrer">Open project</a>
+                <button class="text-button case-study-trigger" type="button" data-project="carecompass">Case study</button>
+                <button class="text-button lightbox-trigger" type="button" data-image="assets/projects/carecompass.png">Preview</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="frontend" data-project="airpods">
+            <div class="project-visual visual-product">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <picture>
+                  <source srcset="./assets/airpods-BRrFQzT5.webp" type="image/webp" />
+                  <img src="./assets/airpods-vSXgSRZa.png" alt="Apple Headphones interactive showcase screenshot" loading="lazy" />
+                </picture>
+              </div>
+              <span>AirPods Max</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Apple Headphones Interactive Showcase</h3>
+                <span class="status">Live</span>
+              </div>
+              <p>
+                Shows my frontend taste, motion sense, and ability to create
+                polished product-style experiences.
+              </p>
+              <div class="tags">
+                <span>Next.js</span><span>GSAP</span><span>Framer Motion</span><span>Three.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gavisingh12.github.io/apple-headphones/" target="_blank" rel="noreferrer">Open project</a>
+                <button class="text-button case-study-trigger" type="button" data-project="airpods">Case study</button>
+                <button class="text-button lightbox-trigger" type="button" data-image="assets/projects/airpods.png">Preview</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="systems frontend" data-project="os">
+            <div class="project-visual visual-os">
+              <div class="browser-frame">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <picture>
+                  <source srcset="./assets/os-dzlP_2gA.webp" type="image/webp" />
+                  <img src="./assets/os-CM8u-Ggf.png" alt="OS project screenshot" loading="lazy" />
+                </picture>
+              </div>
+              <span>OS Project</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Resilient File Harbor</h3>
+                <span class="status">Live</span>
+              </div>
+              <p>
+                Shows my computer science foundation and ability to explain
+                technical concepts through a clear visual interface.
+              </p>
+              <div class="tags">
+                <span>OS</span><span>Systems</span><span>Web UI</span><span>GitHub Pages</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gavisingh12.github.io/os-project/" target="_blank" rel="noreferrer">Open project</a>
+                <button class="text-button case-study-trigger" type="button" data-project="os">Case study</button>
+                <button class="text-button lightbox-trigger" type="button" data-image="assets/projects/os.png">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cv-section reveal" id="cv">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive CV Center</p>
+          <h2>CV options.</h2>
+        </div>
+
+        <div class="cv-shell">
+          <div class="cv-tabs" role="tablist" aria-label="CV versions">
+            <button class="tab active" id="generalTab" role="tab" aria-selected="true" aria-controls="generalCv">General CV</button>
+            <button class="tab" id="personalTab" role="tab" aria-selected="false" aria-controls="personalCv">Specialized CV</button>
+          </div>
+
+          <div class="cv-layout active" id="generalCv" role="tabpanel" aria-labelledby="generalTab">
+            <div class="cv-summary-card">
+              <p class="eyebrow">General CV</p>
+              <h3>General CV</h3>
+              <p>Complete resume with skills, projects, education, certificates, and achievements.</p>
+              <div class="cv-highlight-grid">
+                <div><span>Focus</span><strong>AI/ML + Data Science</strong></div>
+                <div><span>Projects</span><strong>4 featured works</strong></div>
+                <div><span>Stack</span><strong>Python, React, Flask, PostgreSQL</strong></div>
+                <div><span>Proof</span><strong>Certifications + achievements</strong></div>
+              </div>
+              <div class="cv-proof-actions">
+                <a class="primary-button" href="assets/gavinder-general-cv.pdf" target="_blank" rel="noreferrer">View General CV</a>
+                <a class="secondary-button" href="assets/gavinder-general-cv.pdf" download>Download CV</a>
+              </div>
+            </div>
+            <aside class="cv-document-preview" aria-label="General CV preview">
+              <div class="cv-live-preview">
+                <div class="cv-preview-head">
+                  <div>
+                    <span class="label">General CV</span>
+                    <h3>Gavindra Singh</h3>
+                    <p>AI/ML Developer | Data Scientist | Full-Stack Builder | CSE Student</p>
+                  </div>
+                  <a href="assets/gavinder-general-cv.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Contact</h4>
+                  <p>gavinder.singh@gmail.com | +91-9116350746</p>
+                  <p>GitHub: Gavisingh12 | LinkedIn: gavindra-singh</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Skills</h4>
+                  <p>Python, Java, C++, JavaScript, TypeScript, SQL, C, HTML, CSS</p>
+                  <p>React, Next.js, Flask, Django, NumPy, Pandas, scikit-learn, SQLAlchemy, Tailwind CSS, GSAP, Framer Motion, Three.js</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Projects</h4>
+                  <p><strong>Apple Headphones Interactive Showcase</strong> - cinematic frontend experience with scroll-synced animations.</p>
+                  <p><strong>AI Powered Medical Consultation System</strong> - healthcare AI app with authentication, reports, PostgreSQL, and Gemini API.</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Education</h4>
+                  <p>B.Tech Computer Science and Engineering, Lovely Professional University. CGPA: 7.21.</p>
+                </div>
+              </div>
+              <div class="cv-proof-stack">
+                <span>General CV</span>
+                <strong>Original PDF</strong>
+                <div class="cv-proof-actions">
+                  <a class="primary-button" href="assets/gavinder-general-cv.pdf" target="_blank" rel="noreferrer">View CV</a>
+                  <a class="secondary-button" href="assets/gavinder-general-cv.pdf" download>Download CV</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="cv-layout" id="personalCv" role="tabpanel" aria-labelledby="personalTab" hidden>
+            <div class="cv-summary-card specialized-cv-card">
+              <p class="eyebrow">Specialized CV</p>
+              <h3>Specialized CV</h3>
+              <p>Focused version for AI, ML, data science, and applied software roles.</p>
+              <div class="cv-highlight-grid">
+                <div><span>Best for</span><strong>AI/ML + Data Science roles</strong></div>
+                <div><span>Signal</span><strong>Applied AI + project ownership</strong></div>
+                <div><span>Strength</span><strong>Modeling, analysis, UI, execution</strong></div>
+                <div><span>Use case</span><strong>Company-specific applications</strong></div>
+              </div>
+              <div class="cv-proof-actions">
+                <a class="primary-button" href="assets/gavinder-specialized-cv.pdf" target="_blank" rel="noreferrer">View Specialized CV</a>
+                <a class="secondary-button" href="assets/gavinder-specialized-cv.pdf" download>Download CV</a>
+              </div>
+            </div>
+            <aside class="cv-document-preview" aria-label="Specialized CV preview">
+              <div class="cv-live-preview specialized-preview">
+                <div class="cv-preview-head">
+                  <div>
+                    <span class="label">Specialized CV</span>
+                    <h3>Gavindra Singh</h3>
+                    <p>AI/ML Developer | Data Scientist | Full-Stack Builder</p>
+                  </div>
+                  <a href="assets/gavinder-specialized-cv.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Recruiter Focus</h4>
+                  <p>Built for roles that need machine learning thinking, data sense, and strong project ownership.</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Core Proof</h4>
+                  <p>Live AI decision platform, healthcare AI consultation system, interactive product UI, and systems simulation project.</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Technical Stack</h4>
+                  <p>Python, TypeScript, React, Flask, PostgreSQL, NumPy, Pandas, scikit-learn, REST APIs, Three.js, deployment platforms.</p>
+                </div>
+                <div class="cv-preview-section">
+                  <h4>Positioning</h4>
+                  <p>Shows project ownership, learning speed, AI thinking, and the ability to present work professionally.</p>
+                </div>
+              </div>
+              <div class="cv-proof-stack">
+                <span>Specialized CV</span>
+                <strong>Focused PDF</strong>
+                <div class="cv-proof-actions">
+                  <a class="primary-button" href="assets/gavinder-specialized-cv.pdf" target="_blank" rel="noreferrer">View CV</a>
+                  <a class="secondary-button" href="assets/gavinder-specialized-cv.pdf" download>Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey reveal" id="journey">
+        <div class="section-heading">
+          <p class="eyebrow">Timeline</p>
+          <h2>A project-first growth path.</h2>
+        </div>
+        <div class="journey-line">
+          <article>
+            <span>Apr 2026</span>
+            <h3>Patent Filed</h3>
+            <p>Filed a patent for an AI-coordinated distributed directed energy system concept.</p>
+          </article>
+          <article>
+            <span>Mar-Apr 2026</span>
+            <h3>Production Demos</h3>
+            <p>Deployed healthcare AI, product showcase, and decision intelligence projects.</p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h3>DSA + Certifications</h3>
+            <p>Built algorithmic foundations and completed cloud, AI, hardware, and theory certifications.</p>
+          </article>
+          <article>
+            <span>2023-Present</span>
+            <h3>B.Tech CSE</h3>
+            <p>Studying Computer Science and Engineering at Lovely Professional University.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section now-next reveal" id="now">
+        <div class="section-heading">
+          <p class="eyebrow">Now / Next / Learning</p>
+          <h2>A clearer view of current direction.</h2>
+        </div>
+        <div class="nnl-grid">
+          <article>
+            <span>Now</span>
+            <h3>Building AI-enabled full-stack products</h3>
+            <p>Focusing on practical workflows, polished UI, and deployment-ready demos.</p>
+          </article>
+          <article>
+            <span>Next</span>
+            <h3>Personalized CV and role matching</h3>
+            <p>Turning the portfolio into an adaptive career system for specific companies.</p>
+          </article>
+          <article>
+            <span>Learning</span>
+            <h3>Advanced ML, cloud, and system design</h3>
+            <p>Strengthening foundations behind scalable intelligent applications.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skill Map</p>
+          <h2>Capabilities organized for fast scanning.</h2>
+        </div>
+
+        <div class="skill-map">
+          <div class="skill-orbit">
+            <div class="orbit-center">AI + Full Stack</div>
+            <span style="--angle: 0deg">Python</span>
+            <span style="--angle: 60deg">React</span>
+            <span style="--angle: 120deg">Flask</span>
+            <span style="--angle: 180deg">PostgreSQL</span>
+            <span style="--angle: 240deg">GSAP</span>
+            <span style="--angle: 300deg">Gemini API</span>
+          </div>
+          <div class="skill-lanes">
+            <div>
+              <span class="label">AI/ML</span>
+              <p>scikit-learn, Pandas, NumPy, model training, recommendation flows, future estimates.</p>
+            </div>
+            <div>
+              <span class="label">Frontend</span>
+              <p>React, Next.js, TypeScript, Tailwind CSS, animation systems, responsive UI.</p>
+            </div>
+            <div>
+              <span class="label">Engineering</span>
+              <p>Flask, Django, PostgreSQL, APIs, deployment, clean structure, and practical implementation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section certificate-gallery reveal" id="certificates">
+        <div class="section-heading">
+          <p class="eyebrow">Certificates</p>
+          <h2>Learning proof grouped by career signal.</h2>
+        </div>
+        <div class="certificate-grid">
+          <article><span>Cloud</span><strong>Cloud Computing</strong><em>NPTEL SWAYAM</em></article>
+          <article><span>AI</span><strong>Agentic AI</strong><em>Google Cloud</em></article>
+          <article><span>Systems</span><strong>Hardware and Operating Systems</strong><em>IBM</em></article>
+          <article><span>Theory</span><strong>Computational Theory</strong><em>Infosys</em></article>
+          <article><span>DSA</span><strong>Data Structures & Algorithms</strong><em>C++ Training</em></article>
+          <article><span>Hackathon</span><strong>Code-A-Hunt 2.0</strong><em>Coding Blocks LPU</em></article>
+        </div>
+      </section>
+
+      <section class="section recruiter-kit reveal" id="kit">
+        <div class="section-heading">
+          <p class="eyebrow">Recruiter Kit</p>
+          <h2>A compact kit for recruiters and hiring teams.</h2>
+        </div>
+        <div class="kit-grid">
+          <div class="kit-card primary-kit">
+            <span class="label">Best for</span>
+            <h3>AI/ML, data science, full-stack internships and fresher developer roles</h3>
+            <p>Strong proof across AI/ML, data science, frontend polish, and computer science fundamentals.</p>
+          </div>
+          <a class="kit-card" href="assets/gavinder-general-cv.pdf" download>
+            <span class="label">General CV</span>
+            <strong>View and download CV</strong>
+            <small>PDF attached</small>
+          </a>
+          <a class="kit-card" href="assets/gavinder-specialized-cv.pdf" target="_blank" rel="noreferrer">
+            <span class="label">Specialized CV</span>
+            <strong>Focused AI/ML resume</strong>
+            <p>Tailored resume for AI, ML, data science, and applied full-stack hiring screens.</p>
+            <small>PDF attached</small>
+          </a>
+          <a class="kit-card" href="https://github.com/Gavisingh12" target="_blank" rel="noreferrer">
+            <span class="label">Code</span>
+            <strong>GitHub Profile</strong>
+            <p>Source code, live projects, data science practice, AI/ML work, and frontend experiments.</p>
+            <small>github.com/Gavisingh12</small>
+          </a>
+          <a class="kit-card" href="https://www.linkedin.com/in/gavindra-singh/" target="_blank" rel="noreferrer">
+            <span class="label">Network</span>
+            <strong>LinkedIn Profile</strong>
+            <p>Professional profile, education, certificates, and hiring contact.</p>
+            <small>linkedin.com/in/gavindra-singh</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section ai-match reveal" id="match">
+        <div>
+          <p class="eyebrow">Recruiter Summary</p>
+          <h2>AI/ML developer and data scientist with live proof.</h2>
+          <p>
+            I am building a profile around practical AI, data science, clean UI,
+            and consistent project execution. My strongest signal is simple:
+            I do not only list skills, I build and publish work.
+          </p>
+        </div>
+        <div class="match-console">
+          <div class="console-row"><span>Best fit</span><strong>AI / ML / Data Science / Full Stack roles</strong></div>
+          <div class="console-row"><span>Core strengths</span><strong>Python, ML, data analysis, React, Flask, PostgreSQL</strong></div>
+          <div class="console-row"><span>Proof</span><strong>4 live projects, CV, GitHub, LinkedIn, certifications</strong></div>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something useful, intelligent, and polished.</h2>
+          <p class="contact-note">Available for internships, fresher roles, and project-based AI/ML, data science, and full-stack work.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="primary-button" href="mailto:gavinder.singh@gmail.com">gavinder.singh@gmail.com</a>
+          <a class="secondary-button" href="tel:+919116350746">+91 9116350746</a>
+          <a class="secondary-button" href="https://github.com/Gavisingh12" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="secondary-button" href="https://www.linkedin.com/in/gavindra-singh/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="ghost-button" href="assets/gavinder-general-cv.pdf" download>Download CV</a>
+        </div>
+      </section>
+    </main>
+
+    <nav class="mobile-dock" aria-label="Quick actions">
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <dialog class="command-palette" id="commandPalette" aria-labelledby="commandTitle">
+      <div class="command-shell">
+        <div class="command-head">
+          <h2 id="commandTitle">Command Palette</h2>
+          <span>Ctrl + K</span>
+        </div>
+        <input id="commandSearch" type="search" placeholder="Search actions, projects, CV, contact..." autocomplete="off" />
+        <div class="command-list" id="commandList" role="listbox"></div>
+      </div>
+    </dialog>
+
+    <dialog class="case-modal" id="caseModal" aria-labelledby="caseTitle">
+      <div class="modal-shell">
+        <button class="modal-close" type="button" id="modalClose" aria-label="Close case study">Close</button>
+        <div class="modal-visual">
+          <div class="browser-frame large">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <picture>
+              <source id="caseSource" srcset="./assets/decision-Bjhtnmgw.webp" type="image/webp" />
+              <img id="caseImage" src="./assets/decision-CJyUSAkG.png" alt="" />
+            </picture>
+          </div>
+        </div>
+        <div class="modal-content">
+          <p class="eyebrow" id="caseType">Case Study</p>
+          <h2 id="caseTitle">Project title</h2>
+          <p id="caseSummary"></p>
+          <div class="case-grid">
+            <div>
+              <span class="label">Problem</span>
+              <p id="caseProblem"></p>
+            </div>
+            <div>
+              <span class="label">Solution</span>
+              <p id="caseSolution"></p>
+            </div>
+          </div>
+          <div class="case-stack" id="caseStack"></div>
+          <div class="architecture-box">
+            <span class="label">Architecture</span>
+            <div id="caseArchitecture" class="architecture-flow"></div>
+          </div>
+          <div class="gallery-strip" id="caseGallery" aria-label="Project gallery"></div>
+          <a class="primary-button" id="caseLink" href="#" target="_blank" rel="noreferrer">Open live demo</a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Project image preview">
+      <button class="modal-close" id="lightboxClose" type="button">Close</button>
+      <img id="lightboxImage" src="./assets/decision-CJyUSAkG.png" alt="Project preview" />
+    </dialog>
+
+  </body>
+</html>
