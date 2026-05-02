@@ -52,10 +52,10 @@ type CaseStudy = {
 const caseStudies: Record<string, CaseStudy> = {
   decision: {
     title: "AI Decision Intelligence Platform",
-    type: "AI/ML Project Proof",
-    summary: "A project that shows my interest in using AI and data science to make decision-making clearer.",
-    problem: "I wanted to prove that I can work beyond tutorials and build something that connects data, logic, and user-facing output.",
-    solution: "I built a live AI decision platform that presents my analytical thinking, ML direction, and ability to turn an idea into a usable demo.",
+    type: "AI/ML Project",
+    summary: "Shows my interest in using AI and data science to make decision-making clearer.",
+    problem: "I wanted to build beyond tutorials and connect data, logic, and user-facing output.",
+    solution: "I created a decision platform that presents analytical thinking, ML direction, and usable UI.",
     stack: ["AI", "ML workflow", "Data upload", "Hugging Face", "Decision support"],
     architecture: ["User upload", "Data cleaning", "Model workflow", "Results dashboard", "AI assistant"],
     gallery: [
@@ -69,10 +69,10 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   carecompass: {
     title: "AI Powered Medical Consultation System",
-    type: "Applied AI Project Proof",
+    type: "Applied AI Project",
     summary: "A healthcare AI project that reflects my ability to build useful systems around real user problems.",
     problem: "I wanted to show that I can apply AI to a meaningful domain and think about the complete user journey.",
-    solution: "I built a live project that combines AI assistance, user flow, records, reports, and a polished experience.",
+    solution: "I built a project that combines AI assistance, user flow, records, reports, and a polished experience.",
     stack: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Gemini API", "Render"],
     architecture: ["Patient input", "Flask routes", "Gemini analysis", "PostgreSQL history", "PDF report"],
     gallery: [
@@ -86,7 +86,7 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   airpods: {
     title: "Apple Headphones Interactive Showcase",
-    type: "Premium Frontend Project Proof",
+    type: "Premium Frontend Project",
     summary: "A frontend project that shows my design taste, animation sense, and attention to visual polish.",
     problem: "I wanted to prove that I can create interfaces that feel modern, smooth, and presentation-ready.",
     solution: "I built a product-style showcase inspired by premium launch pages, with motion and layout focused on impact.",
@@ -103,7 +103,7 @@ const caseStudies: Record<string, CaseStudy> = {
   },
   os: {
     title: "Resilient File Harbor",
-    type: "Computer Science Project Proof",
+    type: "Computer Science Project",
     summary: "A systems project that shows my computer science foundation and ability to explain technical ideas visually.",
     problem: "I wanted to present an academic concept in a way that is easier to understand and more impressive than plain notes.",
     solution: "I built a visual demo that makes the concept easier to scan, explain, and discuss in interviews.",

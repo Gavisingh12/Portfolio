@@ -2051,6 +2051,204 @@ body.recruiter-mode .project-card:not(.featured) {
   }
 }
 
+/* Compact final spacing for recruiter scanning */
+.section {
+  padding: 64px 0;
+}
+
+.section-heading {
+  margin-bottom: 22px;
+}
+
+#projects .section-heading h2,
+.cv-section .section-heading h2,
+.recruiter-kit .section-heading h2,
+.certificate-gallery .section-heading h2 {
+  max-width: 620px;
+  font-size: clamp(2rem, 3.1vw, 3.25rem);
+  line-height: 1.04;
+}
+
+.cv-section {
+  padding-top: 48px;
+}
+
+.cv-highlight-grid {
+  display: none;
+}
+
+.cv-summary-card {
+  gap: 14px;
+}
+
+.cv-proof-actions {
+  margin-top: 6px;
+}
+
+.project-filters {
+  margin-bottom: 16px;
+}
+
+.apple-story {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 46px 0;
+  }
+
+  #projects .section-heading h2,
+  .cv-section .section-heading h2,
+  .recruiter-kit .section-heading h2,
+  .certificate-gallery .section-heading h2 {
+    font-size: clamp(1.9rem, 8vw, 2.55rem);
+  }
+
+  .cv-summary-card {
+    padding: 22px;
+  }
+}
+
+/* Final recruiter-density pass: less text, cleaner scan, smaller oversized headings */
+.hero-copy h1 {
+  max-width: 720px;
+  font-size: clamp(3rem, 5vw, 5.45rem);
+  line-height: 1;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+}
+
+.github-panel h2 {
+  max-width: 560px;
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  line-height: 1.04;
+}
+
+.github-stats div {
+  min-height: 86px;
+}
+
+.section-heading h2,
+.contact h2 {
+  font-size: clamp(2.2rem, 3.8vw, 4rem);
+  line-height: 1.02;
+}
+
+.project-card {
+  grid-template-rows: minmax(260px, 31vw) auto;
+}
+
+.project-card.featured .project-visual {
+  min-height: min(430px, 45vw);
+}
+
+.project-content {
+  gap: 12px;
+  padding: 24px 28px 26px;
+}
+
+.project-content p {
+  max-width: 720px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.project-content ul {
+  display: none;
+}
+
+.project-visual span {
+  max-width: 390px;
+  font-size: clamp(2rem, 3.55vw, 3.75rem);
+}
+
+.tags {
+  margin: 0;
+}
+
+.cv-layout {
+  grid-template-columns: minmax(0, 0.72fr) minmax(360px, 1fr);
+}
+
+.cv-summary-card {
+  align-content: start;
+  padding: 30px 34px;
+}
+
+.cv-summary-card h3 {
+  max-width: 420px;
+  font-size: clamp(2.4rem, 3.7vw, 3.7rem);
+}
+
+.cv-summary-card p {
+  max-width: 500px;
+  line-height: 1.55;
+}
+
+.cv-highlight-grid div {
+  min-height: 74px;
+}
+
+.cv-proof-stack p {
+  display: none;
+}
+
+.apple-story > div {
+  min-height: 170px;
+}
+
+.apple-story p,
+.kit-card p,
+.ai-match p {
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .hero-copy h1 {
+    font-size: clamp(3rem, 8.8vw, 4.7rem);
+  }
+
+  .project-card,
+  .project-card.featured {
+    grid-template-rows: minmax(280px, 58vw) auto;
+  }
+
+  .cv-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 10.5vw, 3.05rem);
+    line-height: 1.02;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .project-visual span {
+    max-width: 260px;
+    font-size: clamp(1.75rem, 8vw, 2.35rem);
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-content h3 {
+    font-size: 1.45rem;
+  }
+
+  .cv-summary-card h3 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+}
+
 /* Hero and project copy balance refinement */
 .hero {
   grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.88fr);
