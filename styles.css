@@ -1027,6 +1027,13 @@ main {
   line-height: 1.7;
 }
 
+.specialized-cv-card {
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(78, 240, 210, 0.12), transparent 44%),
+    linear-gradient(315deg, rgba(255, 204, 91, 0.12), transparent 48%);
+}
+
 .cv-highlight-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1062,6 +1069,13 @@ main {
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
   max-height: 430px;
   overflow: auto;
+}
+
+.specialized-preview {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 247, 244, 0.98)),
+    #f8fafc;
+  border: 1px solid rgba(0, 127, 104, 0.14);
 }
 
 .cv-preview-head {

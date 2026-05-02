@@ -122,7 +122,9 @@ const caseStudies: Record<string, CaseStudy> = {
 
 const commands = [
   { title: "Open General CV", hint: "Resume", action: () => window.open("assets/gavinder-general-cv.pdf", "_blank") },
+  { title: "Open Specialized CV", hint: "Resume", action: () => window.open("assets/gavinder-specialized-cv.pdf", "_blank") },
   { title: "Download CV", hint: "Resume", action: () => (window.location.href = "assets/gavinder-general-cv.pdf") },
+  { title: "Download Specialized CV", hint: "Resume", action: () => (window.location.href = "assets/gavinder-specialized-cv.pdf") },
   { title: "Go to Projects", hint: "Navigation", action: () => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" }) },
   { title: "Go to Recruiter Kit", hint: "Navigation", action: () => document.querySelector("#kit")?.scrollIntoView({ behavior: "smooth" }) },
   { title: "Open GitHub", hint: "Profile", action: () => window.open("https://github.com/Gavisingh12", "_blank") },
