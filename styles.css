@@ -3389,6 +3389,42 @@ main {
     linear-gradient(90deg, rgba(4, 7, 11, 0.12), transparent 55%);
 }
 
+/* Keep featured project actions visible */
+#projects .project-card.featured {
+  grid-template-rows: auto;
+  min-height: 236px;
+}
+
+#projects .project-card.featured .project-visual,
+#projects .project-card.featured .project-content {
+  min-height: 236px;
+}
+
+#projects .project-card.featured .project-content {
+  align-content: start;
+  padding: 22px;
+}
+
+#projects .project-card.featured .project-actions {
+  display: flex;
+  margin-top: 4px;
+}
+
+#projects .project-card.featured .tags {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 980px) {
+  #projects .project-card.featured {
+    grid-template-rows: 210px auto;
+  }
+
+  #projects .project-card.featured .project-visual,
+  #projects .project-card.featured .project-content {
+    min-height: 0;
+  }
+}
+
 /* Recruiter flow and project image clarity pass */
 .hero-subtitle strong {
   color: var(--text);
