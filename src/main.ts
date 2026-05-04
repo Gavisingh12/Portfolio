@@ -1,4 +1,12 @@
 import * as THREE from "three";
+import airpodsPng from "../assets/projects/airpods.png";
+import airpodsWebp from "../assets/projects/airpods.webp";
+import carecompassPng from "../assets/projects/carecompass.png";
+import carecompassWebp from "../assets/projects/carecompass.webp";
+import decisionPng from "../assets/projects/decision.png";
+import decisionWebp from "../assets/projects/decision.webp";
+import osPng from "../assets/projects/os.png";
+import osWebp from "../assets/projects/os.webp";
 
 const root = document.documentElement;
 const themeToggle = document.querySelector<HTMLButtonElement>("#themeToggle");
@@ -59,12 +67,12 @@ const caseStudies: Record<string, CaseStudy> = {
     stack: ["AI", "ML workflow", "Data upload", "Hugging Face", "Decision support"],
     architecture: ["User upload", "Data cleaning", "Model workflow", "Results dashboard", "AI assistant"],
     gallery: [
-      { label: "Workspace", png: "assets/projects/decision.png", webp: "assets/projects/decision.webp" },
-      { label: "Workflow", png: "assets/projects/decision.png", webp: "assets/projects/decision.webp" },
-      { label: "Assistant", png: "assets/projects/decision.png", webp: "assets/projects/decision.webp" },
+      { label: "Workspace", png: decisionPng, webp: decisionWebp },
+      { label: "Workflow", png: decisionPng, webp: decisionWebp },
+      { label: "Assistant", png: decisionPng, webp: decisionWebp },
     ],
-    image: "assets/projects/decision.png",
-    webp: "assets/projects/decision.webp",
+    image: decisionPng,
+    webp: decisionWebp,
     link: "https://gavinder-ai-decision-intelligence-platform.hf.space",
   },
   carecompass: {
@@ -76,12 +84,12 @@ const caseStudies: Record<string, CaseStudy> = {
     stack: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Gemini API", "Render"],
     architecture: ["Patient input", "Flask routes", "Gemini analysis", "PostgreSQL history", "PDF report"],
     gallery: [
-      { label: "Dashboard", png: "assets/projects/carecompass.png", webp: "assets/projects/carecompass.webp" },
-      { label: "Consultation", png: "assets/projects/carecompass.png", webp: "assets/projects/carecompass.webp" },
-      { label: "Reports", png: "assets/projects/carecompass.png", webp: "assets/projects/carecompass.webp" },
+      { label: "Dashboard", png: carecompassPng, webp: carecompassWebp },
+      { label: "Consultation", png: carecompassPng, webp: carecompassWebp },
+      { label: "Reports", png: carecompassPng, webp: carecompassWebp },
     ],
-    image: "assets/projects/carecompass.png",
-    webp: "assets/projects/carecompass.webp",
+    image: carecompassPng,
+    webp: carecompassWebp,
     link: "https://carecompass-ai.onrender.com/",
   },
   airpods: {
@@ -93,12 +101,12 @@ const caseStudies: Record<string, CaseStudy> = {
     stack: ["Next.js", "React", "TypeScript", "GSAP", "Framer Motion", "Three.js"],
     architecture: ["Product story", "Scroll trigger", "Motion timeline", "3D visual layer", "GitHub Pages"],
     gallery: [
-      { label: "Hero", png: "assets/projects/airpods.png", webp: "assets/projects/airpods.webp" },
-      { label: "Motion", png: "assets/projects/airpods.png", webp: "assets/projects/airpods.webp" },
-      { label: "Product", png: "assets/projects/airpods.png", webp: "assets/projects/airpods.webp" },
+      { label: "Hero", png: airpodsPng, webp: airpodsWebp },
+      { label: "Motion", png: airpodsPng, webp: airpodsWebp },
+      { label: "Product", png: airpodsPng, webp: airpodsWebp },
     ],
-    image: "assets/projects/airpods.png",
-    webp: "assets/projects/airpods.webp",
+    image: airpodsPng,
+    webp: airpodsWebp,
     link: "https://gavisingh12.github.io/apple-headphones/",
   },
   os: {
@@ -110,12 +118,12 @@ const caseStudies: Record<string, CaseStudy> = {
     stack: ["Operating Systems", "Web UI", "GitHub Pages", "Systems design"],
     architecture: ["Storage concept", "Replication logic", "Node status", "Web interface", "GitHub Pages"],
     gallery: [
-      { label: "System UI", png: "assets/projects/os.png", webp: "assets/projects/os.webp" },
-      { label: "Storage", png: "assets/projects/os.png", webp: "assets/projects/os.webp" },
-      { label: "Nodes", png: "assets/projects/os.png", webp: "assets/projects/os.webp" },
+      { label: "System UI", png: osPng, webp: osWebp },
+      { label: "Storage", png: osPng, webp: osWebp },
+      { label: "Nodes", png: osPng, webp: osWebp },
     ],
-    image: "assets/projects/os.png",
-    webp: "assets/projects/os.webp",
+    image: osPng,
+    webp: osWebp,
     link: "https://gavisingh12.github.io/os-project/",
   },
 };
@@ -271,8 +279,11 @@ document.querySelectorAll<HTMLButtonElement>(".case-study-trigger").forEach((but
 
 document.querySelectorAll<HTMLButtonElement>(".lightbox-trigger").forEach((button) => {
   button.addEventListener("click", () => {
-    if (!lightbox || !lightboxImage || !button.dataset.image) return;
-    lightboxImage.src = button.dataset.image;
+    const projectId = button.dataset.project ?? button.closest<HTMLElement>(".project-card")?.dataset.project ?? "";
+    const study = caseStudies[projectId];
+    if (!lightbox || !lightboxImage || !study) return;
+    lightboxImage.src = study.image;
+    lightboxImage.alt = `${study.title} preview`;
     lightbox.showModal();
   });
 });

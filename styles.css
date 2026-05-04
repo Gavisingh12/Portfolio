@@ -3218,3 +3218,51 @@ main {
     padding: 20px;
   }
 }
+
+/* Project screenshot fit and modal preview reliability */
+.browser-frame {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
+    #080b11;
+}
+
+.browser-frame picture {
+  display: block;
+  overflow: hidden;
+  background: #080b11;
+}
+
+.browser-frame img {
+  object-fit: contain;
+  object-position: top center;
+  background: #080b11;
+  transform: none;
+}
+
+.project-card:hover .browser-frame img {
+  transform: none;
+}
+
+.project-card:hover .browser-frame {
+  transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(26px);
+}
+
+.project-visual::before {
+  background:
+    linear-gradient(180deg, rgba(5, 6, 8, 0.08), rgba(5, 6, 8, 0.62)),
+    linear-gradient(90deg, rgba(5, 6, 8, 0.2), transparent 58%);
+}
+
+.browser-frame.large {
+  height: min(520px, calc(100vh - 170px));
+}
+
+.browser-frame.large img,
+.lightbox img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.modal-visual {
+  align-content: center;
+}
