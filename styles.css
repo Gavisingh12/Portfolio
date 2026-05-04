@@ -3351,6 +3351,153 @@ main {
   }
 }
 
+/* Final project screenshot crop overrides */
+#projects .project-visual span {
+  display: none;
+}
+
+#projects .browser-frame {
+  inset: 12px;
+  background: #080b10;
+}
+
+#projects .browser-frame picture,
+#projects .browser-frame img {
+  width: 100%;
+  height: calc(100% - 34px);
+}
+
+#projects .browser-frame img,
+#projects .project-card.featured .browser-frame img {
+  padding: 0;
+  object-fit: cover;
+  object-position: top center;
+  background: #080b10;
+}
+
+#projects .project-card[data-project="airpods"] .browser-frame img {
+  object-position: center;
+}
+
+#projects .project-card[data-project="os"] .browser-frame img {
+  object-position: center 38%;
+}
+
+#projects .project-visual::before {
+  background:
+    linear-gradient(180deg, transparent 58%, rgba(4, 7, 11, 0.7)),
+    linear-gradient(90deg, rgba(4, 7, 11, 0.12), transparent 55%);
+}
+
+/* Recruiter flow and project image clarity pass */
+.hero-subtitle strong {
+  color: var(--text);
+}
+
+.premium-stats span:first-child,
+.premium-stats span:nth-child(2),
+.premium-stats span:nth-child(4) {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+  color: color-mix(in srgb, var(--text) 88%, var(--accent));
+}
+
+#projects.section {
+  padding-top: 44px;
+}
+
+#proof.section {
+  padding-top: 46px;
+}
+
+.project-card,
+.project-card.featured {
+  grid-template-rows: 190px auto;
+}
+
+.project-card.featured {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.98fr);
+}
+
+.project-visual,
+.project-card.featured .project-visual {
+  min-height: 190px;
+  padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012)),
+    #090d13;
+}
+
+.browser-frame {
+  inset: 12px;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #080b10;
+}
+
+.browser-frame img,
+.project-card.featured .browser-frame img {
+  padding: 0;
+  object-fit: cover;
+  object-position: top center;
+  background: #080b10;
+}
+
+.project-card[data-project="airpods"] .browser-frame img {
+  object-position: center;
+}
+
+.project-card[data-project="os"] .browser-frame img {
+  object-position: center 35%;
+}
+
+.project-visual::before {
+  background:
+    linear-gradient(180deg, transparent 52%, rgba(4, 7, 11, 0.72)),
+    linear-gradient(90deg, rgba(4, 7, 11, 0.18), transparent 55%);
+}
+
+.project-visual span {
+  display: none;
+}
+
+.project-content {
+  min-height: 208px;
+}
+
+.project-card.featured .project-content {
+  min-height: 190px;
+}
+
+.project-topline {
+  min-height: 42px;
+}
+
+.project-content p {
+  min-height: 44px;
+}
+
+.project-actions {
+  margin-top: auto;
+}
+
+@media (max-width: 980px) {
+  .project-card,
+  .project-card.featured {
+    grid-template-rows: 210px auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-card,
+  .project-card.featured {
+    grid-template-rows: 185px auto;
+  }
+
+  .project-content,
+  .project-card.featured .project-content {
+    min-height: 0;
+  }
+}
+
 /* Recruiter-grade polish pass */
 :root {
   --bg: #080a0e;
@@ -3393,6 +3540,64 @@ body {
 
 main {
   width: min(1120px, calc(100% - 32px));
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  order: 1;
+}
+
+.apple-story {
+  order: 2;
+}
+
+.proof-strip {
+  order: 3;
+}
+
+.recruiter-view {
+  order: 4;
+}
+
+#projects {
+  order: 5;
+}
+
+#cv {
+  order: 6;
+}
+
+#skills {
+  order: 7;
+}
+
+#certificates {
+  order: 8;
+}
+
+#contact {
+  order: 9;
+}
+
+#proof {
+  order: 10;
+}
+
+#journey {
+  order: 11;
+}
+
+#now {
+  order: 12;
+}
+
+#kit {
+  order: 13;
+}
+
+#match {
+  order: 14;
 }
 
 .nav-links a,
