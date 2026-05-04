@@ -16,6 +16,7 @@ const recruiterToggle = document.querySelector<HTMLButtonElement>("#recruiterTog
 const recruiterPanel = document.querySelector<HTMLElement>("#recruiterPanel");
 const tabs = document.querySelectorAll<HTMLButtonElement>(".tab");
 const filterButtons = document.querySelectorAll<HTMLButtonElement>(".filter-chip");
+const projectGrid = document.querySelector<HTMLElement>(".project-grid");
 const projectCards = document.querySelectorAll<HTMLElement>(".project-card");
 const caseModal = document.querySelector<HTMLDialogElement>("#caseModal");
 const modalClose = document.querySelector<HTMLButtonElement>("#modalClose");
@@ -204,6 +205,26 @@ document.querySelectorAll<HTMLButtonElement>(".timeline-item").forEach((button) 
   });
 });
 
+const setFeaturedProject = (projectId: string) => {
+  if (!projectGrid || !projectId) return;
+
+  const selectedCard = Array.from(projectCards).find((card) => card.dataset.project === projectId);
+  if (!selectedCard || selectedCard.classList.contains("is-hidden")) return;
+
+  projectCards.forEach((card) => {
+    const isSelected = card === selectedCard;
+    card.classList.toggle("featured", isSelected);
+    card.setAttribute("aria-current", String(isSelected));
+  });
+
+  projectGrid.prepend(selectedCard);
+};
+
+const setFirstVisibleProjectFeatured = () => {
+  const firstVisibleCard = Array.from(projectCards).find((card) => !card.classList.contains("is-hidden"));
+  setFeaturedProject(firstVisibleCard?.dataset.project ?? "");
+};
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter ?? "all";
@@ -216,8 +237,25 @@ filterButtons.forEach((button) => {
       const shouldShow = filter === "all" || categories.split(" ").includes(filter);
       card.classList.toggle("is-hidden", !shouldShow);
     });
+
+    setFirstVisibleProjectFeatured();
   });
 });
+
+projectCards.forEach((card) => {
+  card.addEventListener("pointerenter", () => {
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+    setFeaturedProject(card.dataset.project ?? "");
+  });
+
+  card.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+    if (target.closest("a, button")) return;
+    setFeaturedProject(card.dataset.project ?? "");
+  });
+});
+
+setFirstVisibleProjectFeatured();
 
 const openCaseStudy = (projectId: string) => {
   const study = caseStudies[projectId];
