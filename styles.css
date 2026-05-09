@@ -3290,15 +3290,11 @@ main {
   white-space: nowrap;
   opacity: 0;
   transform: translateY(0.38em);
-  animation: rotate-hero-role 9s ease-in-out infinite;
+  animation: rotate-hero-role 6s ease-in-out infinite;
 }
 
 .hero-role-rotator > span:nth-child(2) {
   animation-delay: 3s;
-}
-
-.hero-role-rotator > span:nth-child(3) {
-  animation-delay: 6s;
 }
 
 .hero-title-static {
